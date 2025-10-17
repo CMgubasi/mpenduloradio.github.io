@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mpendulo Radio — Very Informative</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { 
-      font-family: Arial, sans-serif; 
-      text-align: center; 
-      padding: 20px; 
-      background: #000; 
-      color: white; 
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
     }
-    audio { 
-      width: 90%; 
-      max-width: 500px; 
-      margin: 20px auto; 
+    h1 {
+      color: #00ff00;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
     }
-    h1 { color: #00ff00; }
-    .note { font-size: 0.9em; color: #aaa; }
+    p {
+      margin: 0 0 20px;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    audio {
+      width: 90%;
+      max-width: 500px;
+      outline: none;
+      border-radius: 8px;
+      background: #111;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 25px;
+      line-height: 1.5em;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.8em;
+      color: #555;
+    }
   </style>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1041/1041916.png">
 </head>
 <body>
   <h1>📻 Mpendulo Radio — Very Informative</h1>
   <p>Voices from our kasi — live and real.</p>
-  
-  <!-- Direct HTTP stream (works on mobile browsers when on same network or public IP is reachable) -->
-  <audio controls>
-    <source src="https://tameika-hysteretic-unbloodily.ngrok-free.dev/ratanda" type="audio/mpeg">
 
-    Your browser does not support audio.
+  <!-- Corrected live stream link -->
+  <audio controls autoplay>
+    <source src="https://tameika-hysteretic-unbloodily.ngrok-free.dev/ratanda" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
 
   <p class="note">
-    🔹 Make sure the stream is live (BUTT is broadcasting)<br>
-    🔹 Works best on Android. iPhone may require XiiaLive app.
+    🔹 Make sure Icecast is running on your laptop<br>
+    🔹 Ensure BUTT is streaming (showing “On Air”)<br>
+    🔹 Works best on Android & modern browsers<br>
+    🔹 If it stops working, restart <b>ngrok</b> and update this link
   </p>
+
+  <footer>
+    © 2025 Mpendulo Radio | Powered by Crosby IT Guy
+  </footer>
 </body>
 </html>
