@@ -17,15 +17,22 @@
       margin: 20px auto; 
     }
     h1 { color: #00ff00; }
+    .note { font-size: 0.9em; color: #aaa; }
   </style>
 </head>
 <body>
   <h1>📻 Mpendulo Radio — Very Informative</h1>
   <p>Voices from our kasi — live and real.</p>
+  
+  <!-- Direct HTTP stream (works on mobile browsers when on same network or public IP is reachable) -->
   <audio controls>
     <source src="http://mpenduloradio.duckdns.org:8000/ratanda" type="audio/mpeg">
     Your browser does not support audio.
   </audio>
-  <p><small>Works on Android, iPhone, and computers. Just tap play!</small></p>
+
+  <p class="note">
+    🔹 Make sure the stream is live (BUTT is broadcasting)<br>
+    🔹 Works best on Android. iPhone may require XiiaLive app.
+  </p>
 </body>
 </html>
