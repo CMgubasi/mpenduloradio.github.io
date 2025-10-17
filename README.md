@@ -1,2 +1,2 @@
 # mpenduloradio.github.io
-Mpendulo Ratanda Ext7 - Community Radio
+Mpendulo Radio - Very Informative
